@@ -118,6 +118,11 @@ input {
   font-weight: 600;
 }
 
+input::placeholder {
+  color: #a3a3a0;
+  opacity: 1;
+}
+
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   margin: 0;
