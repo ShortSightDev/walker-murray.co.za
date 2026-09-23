@@ -1,15 +1,89 @@
-WALKER MURRAY
-Rent Calculator
-Monthly expenses Your shared household costs
-R30,000
-Earned from Red & Yellow:
-R
-Enter Rhiannon's income from her second job this month.
-THIS MONTH
-Tristan
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Walker Murray joint account contribution calculator">
 
-R0
-Rhiannon
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./styles.css">
 
-R0
-Total contribution R30,000
+  <title>Joint Account | Walker Murray</title>
+</head>
+
+<body>
+  <main class="app">
+
+    <header class="brand">
+      <p class="eyebrow">WALKER MURRAY</p>
+      <h1>Joint Account</h1>
+    </header>
+
+    <section class="card">
+      <div class="expense-row">
+        <div>
+          <span class="label">Monthly expenses</span>
+          <span class="subtle">Your shared household costs</span>
+        </div>
+
+        <strong>R30,000</strong>
+      </div>
+
+      <div class="input-group">
+        <label for="red-yellow">Earned from Red &amp; Yellow:</label>
+
+        <div class="input-wrap">
+          <span aria-hidden="true">R</span>
+
+          <input
+            id="red-yellow"
+            name="red-yellow"
+            type="number"
+            inputmode="decimal"
+            min="0"
+            step="1"
+            value="0"
+            autocomplete="off"
+            aria-describedby="input-help"
+          >
+        </div>
+
+        <p id="input-help" class="subtle">
+          Enter Rhiannon's income from her second job this month.
+        </p>
+      </div>
+    </section>
+
+    <section class="results" aria-live="polite">
+      <p class="eyebrow">THIS MONTH</p>
+
+      <div class="person-result">
+        <div>
+          <h2>Tristan</h2>
+          <p id="tristan-percent" class="subtle"></p>
+        </div>
+
+        <strong id="tristan-pays">R0</strong>
+      </div>
+
+      <div class="person-result">
+        <div>
+          <h2>Rhiannon</h2>
+          <p id="rhiannon-percent" class="subtle"></p>
+        </div>
+
+        <strong id="rhiannon-pays">R0</strong>
+      </div>
+
+      <div class="total">
+        <span>Total contribution</span>
+        <strong id="total">R30,000</strong>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
