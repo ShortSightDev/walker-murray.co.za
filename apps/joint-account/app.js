@@ -41,4 +41,16 @@ function calculate() {
 }
 
 input.addEventListener('input', calculate);
+input.addEventListener('focus', () => {
+  if (input.value === '0') {
+    input.value = '';
+  }
+});
+
+input.addEventListener('blur', () => {
+  if (input.value === '') {
+    input.value = '0';
+  }
+
+});
 calculate();
