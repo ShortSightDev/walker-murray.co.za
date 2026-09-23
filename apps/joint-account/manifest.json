@@ -1,0 +1,11 @@
+{
+  "name": "Rent Calculator",
+  "short_name": "Rent Calculator",
+  "description": "Rent contribution calculator",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f3",
+  "theme_color": "#111111",
+  "lang": "en-ZA",
+  "icons": []
+}
